@@ -1,0 +1,42 @@
+name: test_loc
+description: A new Flutter project.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  http: ^0.13.3
+
+  cupertino_icons: ^1.0.2 # Uncomment this line to include Cupertino Icons
+
+flutter:
+  assets:
+    - assets/
+    - assets/cross.gif
+    - assets/app_icon.png
+  uses-material-design: true
+
+android:
+  appBundle: com.example.test_loc
+  assets:
+    - assets/cross.gif
+    - assets/app_icon.png
+
+ios:
+  assets:
+    - assets/cross.gif
+    - assets/app_icon.png
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.9.2
+
+flutter_icons:
+  image_path: "assets/app_icon.png"
+  android: true
+  ios: true
